@@ -23,7 +23,7 @@ public class Inseration_sort {
             int j = i - 1;
             // j=2-1=1
 
-            // Move elements of arr[0..i-1], that are greater than key, one position ahead
+            // Move elements of arr[0;i-1], that are greater than key, one position ahead
 
 
             //int[] arr = {12, 25, 64, 22, 11};
