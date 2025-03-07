@@ -1,7 +1,6 @@
 package org.example.sorting;
 
-        //Choose a pivot (we use the last element in this implementation).
-        //Partitioning:
+        //Choose a pivot
         //Move all elements smaller than the pivot to the left.
         //Move larger elements to the right.
         //Place the pivot in its correct position.
@@ -30,8 +29,8 @@ public class Quick_Sort {
 
     // Method to partition the array
     public static int partition(int[] arr, int low, int high) {
-        int pivot = arr[high]; // Choosing the last element as pivot
-        int i = low - 1; // Pointer for the smaller element
+        int pivot = arr[high];  // Choosing the last element as pivot
+        int i = low - 1;   // Pointer for the smaller element
 
         for (int j = low; j < high; j++) {
             if (arr[j] < pivot) { // If current element is smaller than pivot

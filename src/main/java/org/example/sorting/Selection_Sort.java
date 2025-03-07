@@ -14,9 +14,19 @@ public class Selection_Sort {
 
 
     public static void selectionSort(int[] arr) {
+
+        // initial array = int[] arr = {64, 25, 12, 22, 11};
+        // iteration of outer loop
+        // array after 1st itr =  int[] arr = {25, 64, 12, 22, 11}
+        // array after 2nd itr =  int[] arr = {12, 25, 64, 22, 11}
+        // array after 3rd itr =  int[] arr = {12, 22, 25, 64, 11}
+        // array after 4th itr =  int[] arr = {11, 12, 22, 25, 64}
+
+
         int n = arr.length;
 
         for (int i = 0; i < n - 1; i++) {
+
             // Assume the first element of the unsorted part is the minimum
             int minIndex = i;
 

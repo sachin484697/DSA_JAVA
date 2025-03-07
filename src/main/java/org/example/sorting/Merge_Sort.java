@@ -9,7 +9,7 @@ package org.example.sorting;
 
         // Total time complexity: O(n log n) (logarithmic-linear time).
 
-public class Merge_sort {
+public class Merge_Sort {
 
 
     public static class MergeSort {

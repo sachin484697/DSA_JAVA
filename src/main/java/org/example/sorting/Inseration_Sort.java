@@ -9,7 +9,7 @@ package org.example.sorting;
           //Time Complexity: O(n) (linear time).
 
 
-public class Inseration_sort {
+public class Inseration_Sort {
     public static void insertionSort(int[] arr) {
         //int[] arr = {12, 25, 64, 22, 11};
 
