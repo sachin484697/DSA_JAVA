@@ -4,7 +4,7 @@ package org.example.Searcing;
             //The middle element is the target.
             //Time Complexity: O(1) (constant time).
 
-public class Searching {
+public class Binary_search {
 
 
         //Find the middle element of the array.

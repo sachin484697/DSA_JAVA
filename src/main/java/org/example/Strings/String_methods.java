@@ -5,7 +5,7 @@ import java.util.Arrays;
 //String Literal ("Hello")	---String Constant Pool (SCP)	--- 	String s1 = "Hello";
 //Using new Keyword	--Heap Memory ---	String s1 = new String("Hello");
 
-public class String_oprations {
+public class String_methods {
 
     // The String class in Java is an immutable sequence of characters stored in a char array internally.
     public static void main(String[] args) {

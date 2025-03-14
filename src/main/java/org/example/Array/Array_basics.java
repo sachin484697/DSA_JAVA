@@ -1,6 +1,6 @@
 package org.example.Array;
 
-public class Array {
+public class Array_basics {
     public static void main(String[] args) {
 
         // direct initialization
