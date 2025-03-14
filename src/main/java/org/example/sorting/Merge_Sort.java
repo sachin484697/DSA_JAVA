@@ -14,17 +14,18 @@ public class Merge_Sort {
 
     public static class MergeSort {
 
-        // Method to perform Merge Sort
+
 
         public static void mergeSort(int[] arr, int left, int right) {
             if (left < right) {
                 int mid = left + (right - left) / 2;
 
-                // Recursively sort the left and right halves
+                // Recursively sort the left and right arrays
+
                 mergeSort(arr, left, mid);
                 mergeSort(arr, mid + 1, right);
 
-                // Merge the sorted halves
+                // Merge the sorted arrays
                 merge(arr, left, mid, right);
             }
         }
