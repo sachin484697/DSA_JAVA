@@ -11,7 +11,7 @@ package org.example.Sorting;
          // Worst Case (O(n²))
 
 
-public class Quick_Sort_LastPivot {
+public class Quick_sort_lastPivot {
 
     // quick sort
     //time complexity

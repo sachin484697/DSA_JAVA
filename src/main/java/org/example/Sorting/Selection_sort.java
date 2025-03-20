@@ -10,7 +10,7 @@ package org.example.Sorting;
 
 
 
-public class Selection_Sort {
+public class Selection_sort {
 
 
     public static void selectionSort(int[] arr) {

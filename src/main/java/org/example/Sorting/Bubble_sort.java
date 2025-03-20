@@ -1,6 +1,6 @@
 package org.example.Sorting;
 
-public class Bubble_Sort {
+public class Bubble_sort {
 
 
     //best - Time Complexity: O(n)

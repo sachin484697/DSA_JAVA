@@ -1,6 +1,6 @@
 package org.example.Stack;
 
-public class Stack_Using_LinkedList {
+public class Stack_using_linkedList {
 
      static class StackLinkedList {
 

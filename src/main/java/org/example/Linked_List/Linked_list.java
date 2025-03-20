@@ -1,6 +1,6 @@
 package org.example.Linked_List;
 
-public class Linked_List {
+public class Linked_list {
     public static void main(String[] args) {
         // Node class to represent each node in the Linked List
         class Node {

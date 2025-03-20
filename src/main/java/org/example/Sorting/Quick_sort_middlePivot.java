@@ -2,7 +2,7 @@ package org.example.Sorting;
 
 import java.util.Arrays;
 
-public class Quick_Sort_MiddlePivot {
+public class Quick_sort_middlePivot {
 
     //sort({11, 12, 25, 22, 64},2,0)
 
