@@ -1,4 +1,4 @@
-package org.example.Soring;
+package org.example.Sorting;
 
         //Start from the second element (since the first element is already sorted).
         //Take the current element (key) and compare it with previous elements.

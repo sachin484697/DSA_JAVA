@@ -1,4 +1,4 @@
-package org.example.Soring;
+package org.example.Sorting;
 
 
         // Start with the first element (i = 0) as the minimum index.

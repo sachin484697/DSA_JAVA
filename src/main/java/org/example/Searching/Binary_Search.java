@@ -1,4 +1,4 @@
-package org.example.Searcing;
+package org.example.Searching;
 
             //Best Case (Target found in the first step)
             //The middle element is the target.

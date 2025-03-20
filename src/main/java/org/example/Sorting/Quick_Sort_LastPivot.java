@@ -1,4 +1,4 @@
-package org.example.Soring;
+package org.example.Sorting;
 
         //Choose a pivot
         //Move all elements smaller than the pivot to the left.
