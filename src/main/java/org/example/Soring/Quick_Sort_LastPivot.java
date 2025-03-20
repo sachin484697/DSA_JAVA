@@ -1,4 +1,4 @@
-package org.example.sorting;
+package org.example.Soring;
 
         //Choose a pivot
         //Move all elements smaller than the pivot to the left.
@@ -11,7 +11,7 @@ package org.example.sorting;
          // Worst Case (O(n²))
 
 
-public class Quick_Sort_lastPivot {
+public class Quick_Sort_LastPivot {
 
     // quick sort
     //time complexity

@@ -1,8 +1,8 @@
-package org.example.Hashing_implimenation;
+package org.example.Hashing;
 
 import java.util.HashMap;
 
-public class Hashmap_basics {
+public class Hashmap_Basics {
 
 
     // A HashMap internally uses an array of Node<K, V> objects, where each Node represents an entry in the map.

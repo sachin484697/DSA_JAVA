@@ -1,4 +1,4 @@
-package org.example.Hashing_implimenation;
+package org.example.Hashing;
 
 class SimpleHashTable {
     private static final int SIZE = 10; // Size of the hash table

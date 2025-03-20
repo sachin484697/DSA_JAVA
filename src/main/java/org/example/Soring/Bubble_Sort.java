@@ -1,4 +1,4 @@
-package org.example.sorting;
+package org.example.Soring;
 
 public class Bubble_Sort {
 

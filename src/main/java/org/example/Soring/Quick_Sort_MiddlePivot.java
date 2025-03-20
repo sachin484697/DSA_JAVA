@@ -1,8 +1,8 @@
-package org.example.sorting;
+package org.example.Soring;
 
 import java.util.Arrays;
 
-public class Quick_Sort_middlePivot {
+public class Quick_Sort_MiddlePivot {
 
     //sort({11, 12, 25, 22, 64},2,0)
 

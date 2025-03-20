@@ -1,4 +1,4 @@
-package org.example.Hashing_implimenation;
+package org.example.Hashing;
 
 import java.util.LinkedList;
 
@@ -7,7 +7,7 @@ import java.util.LinkedList;
 //Remove (Delete Key-Value Pair) → O(1) (average),    O(n) (worst case)
 //Display (Print All Entries) → O(n)
 
-class HashTable_collisionHandling {
+class HashTable_CollisionHandling {
     private int size; // Size of the hash table
     private LinkedList<Entry>[] table; // Array of linked lists
 
@@ -23,7 +23,7 @@ class HashTable_collisionHandling {
     }
 
     // Constructor to initialize the hash table
-    public HashTable_collisionHandling(int size) {
+    public HashTable_CollisionHandling(int size) {
         this.size = size;
         table = new LinkedList[size];
         for (int i = 0; i < size; i++) {
@@ -78,7 +78,7 @@ class HashTable_collisionHandling {
 
     // Main method for testing
     public static void main(String[] args) {
-        HashTable_collisionHandling ht = new HashTable_collisionHandling(10);
+        HashTable_CollisionHandling ht = new HashTable_CollisionHandling(10);
 
         ht.put(1, 100);
         ht.put(11, 200);

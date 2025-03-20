@@ -1,4 +1,4 @@
-package org.example.sorting;
+package org.example.Soring;
 
 
         // If the array has more than one element:

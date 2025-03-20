@@ -1,4 +1,4 @@
-package org.example.queue;
+package org.example.Queue;
 
 public class Queue {
 
