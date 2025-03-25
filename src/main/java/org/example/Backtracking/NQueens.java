@@ -1,77 +1,66 @@
 package org.example.Backtracking;
 
+import java.util.*;
+
 public class NQueens {
-
-    static int queens(boolean[][] board, int row) {
-        if (row == board.length) {
-            disply(board);
-            return 1;
-
+    public List<List<String>> solveNQueens(int n) {
+        List<List<String>> result = new ArrayList<>();
+        char[][] board = new char[n][n];
+        for (char[] row : board) {
+            Arrays.fill(row, '.');
         }
-        //placing the queen and checking for every row and column
-        int count = 0;
-        for (int col = 0; col < board.length; col++) {
-            if (isSafe(board, row, col)) {
-                board[row][col] = true;
-                count += queens(board, row + 1);
-                board[row][col] = false;
-            }
-
-        }
-        return count;
-
-
+        backtrack(result, board, 0, n);
+        return result;
     }
 
-    private static boolean isSafe(boolean[][] board, int row, int col) {
-        //cheak vertical row
+    private void backtrack(List<List<String>> result, char[][] board, int row, int n) {
+        if (row == n) {
+            result.add(constructBoard(board));
+            return;
+        }
+
+        for (int col = 0; col < n; col++) {
+            if (isSafe(board, row, col, n)) {
+                board[row][col] = 'Q';
+                backtrack(result, board, row + 1, n);
+                board[row][col] = '.'; // backtrack
+            }
+        }
+    }
+
+    private boolean isSafe(char[][] board, int row, int col, int n) {
         for (int i = 0; i < row; i++) {
-            if (board[i][col]) {
-                return false;
-            }
+            if (board[i][col] == 'Q') return false;
         }
 
-
-
-    //dogonal left
-        int maxLeft = Math.min(row, col);
-        for(int i= 1;i<=maxLeft;i++){
-            if(board[row-i][col-i]){
-                return false;
-            }
+        for (int i = row - 1, j = col - 1; i >= 0 && j >= 0; i--, j--) {
+            if (board[i][j] == 'Q') return false;
         }
-        //dogonal right
-        int maxRight = Math.min(row, board.length-col-1);
-        for(int i= 1;i<=maxRight;i++){
-            if(board[row-i][col+i]){
-                return false;
-            }
+
+        for (int i = row - 1, j = col + 1; i >= 0 && j < n; i--, j++) {
+            if (board[i][j] == 'Q') return false;
         }
-    return true;
-}
 
-
-    private static void disply(boolean[][] bord) {
-       for(boolean[] row : bord){
-           for(boolean element : row){
-               if(element){
-                   System.out.print("Q ");
-               }else{
-                   System.out.print("X ");
-               }
-           }
-           System.out.println();
-
-
-       }
+        return true;
     }
 
+    private List<String> constructBoard(char[][] board) {
+        List<String> res = new ArrayList<>();
+        for (char[] row : board) {
+            res.add(new String(row));
+        }
+        return res;
+    }
 
     public static void main(String[] args) {
-      int n=4;
-      boolean [][] board = new boolean[n][n];
-
-
-
+        NQueens nq = new NQueens();
+        int n = 4; // Change the value for different board sizes
+        List<List<String>> solutions = nq.solveNQueens(n);
+        for (List<String> solution : solutions) {
+            for (String row : solution) {
+                System.out.println(row);
+            }
+            System.out.println();
+        }
     }
 }
